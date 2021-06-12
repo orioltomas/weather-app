@@ -1,0 +1,33 @@
+<html lang="en">
+    <head>
+        <meta charset="UTF-8"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+        <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="/styles.css">
+        <title>Weather app</title>
+    </head>
+    <body>
+        <div class="weather-background-image"></div>
+        <div class="weather-wrapper">
+            <h1 class="weather-headline">Check the weather in ...</h1>
+            <div class="weather-input-wrapper">
+                <input class="weather-input" placeholder="City name" value="Barcelona" />
+                <button type="button" class="weather-search-btn">
+                    <span></span>
+                    <span></span>
+                </button>
+            </div>
+            <div class="weather-error content-padding"></div>
+            <div class="weather-content content-padding">
+                <div class="weather-city-name"></div>
+                <div class="weather-description mt-20"></div>
+                <div class="weather-temp mt-10">Temperature: <span></span></div>
+                <div class="weather-feeling mt-10">Feels like: <span></span></div>
+                <div class="weather-humidity mt-10">Humidity: <span></span></div>
+            </div>
+        </div>
+
+        <script src="/app.js"></script>
+    </body>
+</html>
