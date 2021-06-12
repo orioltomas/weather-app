@@ -1,6 +1,6 @@
 <h1>WEATHER APP</h1>
 
-Feel free to clone this weather application.
+Feel free to clone, download or share this weather application.
 
 <h3>How to make it work:</h3>
 
