@@ -1,5 +1,18 @@
 <h1>WEATHER APP</h1>
 
+This application will let you check the weather in any city you want, just by writting its name on the input field.
+
+The following information will be displayed under the input field:
+- City name
+- Description
+- Temperature
+- Temperature feeling
+- Humidity
+
+The background image will also be updated with a photo of the city you are looking for.
+
+The application is showing 'Barcelona' weather information by default.
+
 Feel free to clone, download or share this weather application.
 
 <h3>How to make it work:</h3>
@@ -8,8 +21,3 @@ Feel free to clone, download or share this weather application.
 2. Register to https://unsplash.com/developers to get your API Key for the background images.
 3. Add both API Keys in the <i>app.js</i> file.
 4. Finally, open the <i>index.html</i> file in your favorite explorer and try it out.
-
-<h3>What you will find:</h3>
-
-You will be able to check the weather information (description, temperature, temperature feeling and humidity) of any city you choose. You will just need to write its name on the input field you will find on the page.
-
