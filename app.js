@@ -5,7 +5,7 @@ let weather = {
     temperature: "",
     feelsLike: "",
     humidity: "",
-    apiKey: "",
+    apiKey: config.OPENWEATHERMAP_KEY,
     fetchWeather: function (cityName, changeBackground = true) {
         fetch(`https://api.openweathermap.org/data/2.5/weather?units=metric&q=${cityName}&appid=${this.apiKey}`)
         .then(response => response.json())
@@ -51,14 +51,18 @@ let weather = {
 
 // Unsplash API for background images
 let backgroundImage = {
-    apiKey: "",
+    apiKey: config.UNSPLASH_KEY,
     changeBackgroundImage: function (query) {
         fetch(`https://api.unsplash.com/search/photos/?query=${query}&orientation=landscape&client_id=${this.apiKey}`)
             .then(response => response.json())
             .then(data => {
-                const random0to9 = Math.floor(Math.random() * 10);
-                const imageUrl = data['results'][random0to9]['urls']['full'];
-                document.querySelector('.weather-background-image').style.backgroundImage = `url("${imageUrl}")`;
+                const numResults = data['results'].length;
+                console.log(data['results']);
+                if (numResults > 0) {
+                    const random = Math.floor(Math.random() * numResults);
+                    const imageUrl = data['results'][random]['urls']['regular'];
+                    document.querySelector('.weather-background-image').style.backgroundImage = `url("${imageUrl}")`;
+                }
             })
     }
 }

@@ -1,3 +1,6 @@
+# configuration
+config.js
+
 # deployment
 firebase.json
 .firebaserc
