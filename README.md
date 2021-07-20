@@ -30,4 +30,4 @@ const config = {
 }
 ```
 
-7. Finally, open the <i>index.html</i> file in your favorite explorer and try it out.
+6. Finally, open the <i>index.html</i> file in your favorite explorer and try it out.
