@@ -25,8 +25,8 @@ Feel free to clone, download or share this weather application.
 
 ```
 const config = {
-    OPENWEATHERMAP_KEY : '98178f6275ccdc6fe58a571fa333f478',
-    UNSPLASH_KEY : 'VpF3yEiIzL09tvQgKoWVKZvex-a7E_rVj4ixbzD9fi8'
+    OPENWEATHERMAP_KEY : 'XXXXXXXXXXXXXXX',
+    UNSPLASH_KEY : 'XXXXXXXXXXXXXXX'
 }
 ```
 
