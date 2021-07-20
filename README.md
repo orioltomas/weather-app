@@ -21,5 +21,13 @@ Feel free to clone, download or share this weather application.
 2. Register to https://unsplash.com/developers to get your API Key for the background images.
 3. Download the application code.
 4. Open the folder that contains the application in your computer.
-5. Edit <i>app.js</i> file to add both API Keys.
+5. Create a <i>config.js</i> file in the project's root folder and add config object:
+
+```
+const config = {
+    OPENWEATHERMAP_KEY : 'XXXXXXXXXXXXXXX',
+    UNSPLASH_KEY : 'XXXXXXXXXXXXXXX'
+}
+```
+
 6. Finally, open the <i>index.html</i> file in your favorite explorer and try it out.
